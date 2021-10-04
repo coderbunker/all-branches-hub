@@ -2,59 +2,32 @@
 
 The landing page of all Coderbunker branches website
 
----
+## 0. Frameworks
 
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+* Gatsby: v3.13
+* PostCSS: v8.3
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+## 1. Hosting and deployment
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+We use Netlify to host the Gatsby page. 
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- `production` branch: any changes, pull requests and merges to this branch will be published on the production website
+- `deploy-preview` branch: the staging branch for the website preview before it goes live on production.
 
-2.  **Start developing.**
+## 2. How to develop the project
 
-    Navigate into your new site’s directory and start it up.
+1. clone the repo
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+    ```git clone git@github.com:coderbunker/all-bra```
 
-3.  **Open the code and start customizing!**
+2. install all the dependencies
 
-    Your site is now running at http://localhost:8000!
+    ```npm install```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+3. run gatsby server to preview locally at [http://localhost:8000](http://localhost:8000)
 
-4.  **Learn more**
+    ```npm run develop```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+4. commit the changes to `deploy-preview` branch on Github, then Netlify will automatically compile and update the website. The preview version of this website is at [https://coderbunker-hub-preview.netlify.app/](https://coderbunker-hub-preview.netlify.app/)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
